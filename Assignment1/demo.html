@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header .logo img {
+            max-height: 50px;
+        }
+
+        header .social-links a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .main-content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .box:nth-child(odd) {
+            background-color: #e8f5e9;
+        }
+
+        .box:nth-child(even) {
+            background-color: #e3f2fd;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://www.hashedbit.com/static/media/hb_logo.48080b71f6a9f2dc3226.png" alt="Logo"></div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Welcome to our website! Here you can explore services tailored to your needs and learn more about our expertise in the tech world.</p>
+        </aside>
+
+        <main class="main-content">
+            <div class="box">
+                <h3>Web Development</h3>
+                <img src="image1.png" alt="Web Development">
+                <p>Our web development service creates responsive and dynamic websites that cater to your business needs and enhance user engagement.</p>
+            </div>
+            <div class="box">
+                <h3>App Development</h3>
+                <img src="image1.png" alt="App Development">
+                <p>We specialize in crafting user-friendly mobile applications with a focus on performance, design, and scalability.</p>
+            </div>
+            <div class="box">
+                <h3>Chatbot Development</h3>
+                <img src="download.jpg" alt="Chatbot Development">
+                <p>Leverage our chatbot solutions to enhance customer interaction, automate responses, and provide round-the-clock support.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright ©2024 All rights reserved | Jay</p>
+    </footer>
+</body>
+</html>
